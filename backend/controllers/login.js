@@ -30,7 +30,7 @@ async function handleUserLogin(req, res) {
     // Set token in HTTP-only cookie (Expires in 15 days)
     res.cookie("token", token, {
       httpOnly: true, // Prevents access via JavaScript (More secure)
-      secure: process.env.NODE_ENV === "production", // Ensures HTTPS in production
+      secure: true,
       sameSite: "Strict", // Prevents CSRF attacks
       maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days in milliseconds
     });

@@ -52,7 +52,7 @@ export default function RegisterForm() {
         throw new Error(data.message || "Registration failed");
       }
       
-      navigate("/login")
+     // navigate("/login")
 
       // router.push("/dashboard");
     } catch (err) {
