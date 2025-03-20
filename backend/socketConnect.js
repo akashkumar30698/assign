@@ -14,7 +14,7 @@ const Message = require("./models/Message")
  */
 const io = new Server(server, {
   cors: {
-    origin: `http://localhost:5173`, // Ensure this matches your React app URL
+    origin: `https://assign-tawny.vercel.app`, // Ensure this matches your React app URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
   },
@@ -54,7 +54,7 @@ app.get("/messages/:user1/:user2", async (req, res) => {
       ],
     }).sort({ timestamp: 1 });
 
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+    res.setHeader("Access-Control-Allow-Origin", "https://assign-tawny.vercel.app");
     res.setHeader("Access-Control-Allow-Credentials", "true");
 
     res.json(messages);

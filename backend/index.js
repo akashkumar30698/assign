@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 
 //CORS
 const allowedOrigins = [
-  `http://localhost:5173`,
+  `https://assign-tawny.vercel.app`,
   // Add all potential front-end URLs
 ];
 

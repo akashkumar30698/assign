@@ -8,7 +8,7 @@ import { io } from "socket.io-client"
 import { aiRespond } from "../services/ai-chat"
 import { useLocation } from "react-router-dom"
 
-const SERVER_URL = "http://localhost:8000" // Update this
+const SERVER_URL = "https://assign-p3fv.onrender.com"
 
 export default function Dashboard() {
   const [contacts, setContacts] = useState([])

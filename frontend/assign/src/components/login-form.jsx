@@ -25,7 +25,7 @@ export default function LoginForm() {
     setError("")
 
     try {
-      const res = await axios.post("http://localhost:8000/login", formData, { withCredentials: true })
+      const res = await axios.post("https://assign-p3fv.onrender.com/login", formData, { withCredentials: true })
       // Token will be set from backend via cookies
       
       if (res.status === 200) {

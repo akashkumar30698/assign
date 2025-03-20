@@ -12,7 +12,7 @@ import Cookies from "js-cookie"
 import { useNavigate } from "react-router-dom"
 
 
-const SERVER_URL = "http://localhost:8000" // Change this to your actual backend URL
+const SERVER_URL = "https://assign-p3fv.onrender.com" 
 
 export default function Sidebar({ selectedContact, onSelectContact }) {
   const [contacts, setContacts] = useState([])
